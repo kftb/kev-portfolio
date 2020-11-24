@@ -29,18 +29,39 @@ const Header = () => {
             {title || 'Hi, my name is'}{' '}
             <span className="text-color-main">{name || 'Kevin.'}</span>
             <br />
-            {subtitle || "I'm the Unknown Developer."}
+           
+          </h1>
+          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1500} distance="30px">
+          <h1 className="hero-title">
+              {subtitle || "I am a..."}
           </h1>
         </Fade>
-        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+          
+          </Fade>
+        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={2000} distance="30px">
+        <p className="hero-subtitle">consultant.</p>
+        </Fade>
+        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={2500} distance="30px">
+          <p className="hero-subtitle">product manager.</p>
+        </Fade>
+        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={3000} distance="30px">
+          <p className="hero-subtitle">techie.</p>
+        </Fade>
+        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={3500} distance="30px">
+          <p className="hero-subtitle">nerd.</p>
+        </Fade>
+        <br></br>
+        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={4000} distance="30px">
           <p className="hero-cta">
             <span className="cta-btn cta-btn--hero">
               <Link to="about" smooth duration={1000}>
-                {cta || 'Know more'}
+                {cta}
               </Link>
             </span>
           </p>
         </Fade>
+       
+
       </Container>
     </section>
   );
