@@ -9,10 +9,10 @@ export const headData = {
 
 // HERO DATA
 export const heroData = {
-  title: '',
-  name: '',
+  title: 'Hi, my name is',
+  name: 'Kevin.',
   subtitle: '',
-  cta: '',
+  cta: 'straight to resume',
 };
 
 // ABOUT DATA
@@ -76,6 +76,24 @@ export const footerData = {
       url: 'https://github.com/kftb',
     },
   ],
+  colors: [
+  {
+    name: "red",
+    hex: "E07A5F"
+  },
+  {
+    name: "blue",
+    hex: "3D405B"
+  },
+  {
+    name: "green",
+    hex: "81B29A"
+  },
+  {
+    name: "yellow",
+    hex: "F2CC8F"
+  },
+  ]
 };
 
 // Github start/fork buttons
