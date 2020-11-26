@@ -32,39 +32,51 @@ const Header = () => {
            
           </h1>
           <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1500} distance="30px">
-          <h1 className="hero-title">
+          <h2 className="hero-subtitle" style={{ "marginLeft": 0, "fontWeight": 100 }}>
               {subtitle || "I am a..."}
-          </h1>
+          </h2>
         </Fade>
           
           </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={2000} distance="30px">
-        <Link to="/consulting" smooth duration={1000}>
-        <p className="hero-subtitle">consultant.</p>
-        </Link>
+          <p className="hero-subtitle" style={{"color": `$primary-color`}}>
+            <span style={{ "fontWeight": 100 }}>experienced </span> 
+            <span className="text-color-main">consultant.</span> 
+          </p>
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={2500} distance="30px">
-          <p className="hero-subtitle">product manager.</p>
+        <p className="hero-subtitle" style={{"color": `$primary-color`}}>
+            <span style={{ "fontWeight": 100}}>aspiring </span> 
+            <span className="text-color-main">product manager.</span> 
+          </p>
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={3000} distance="30px">
-          <p className="hero-subtitle">techie.</p>
+        <p className="hero-subtitle" style={{"color": `$primary-color`}}>
+            <span style={{ "fontWeight": 100 }}>excited </span> 
+            <span className="text-color-main">techie.</span> 
+          </p>
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={3500} distance="30px">
-          <p className="hero-subtitle">nerd.</p>
+        <p className="hero-subtitle" style={{"color": `$primary-color`}}>
+            <span style={{ "fontWeight": 100 }}>proud </span> 
+            <span className="text-color-main">nerd.</span> 
+          </p>
         </Fade>
+        <br></br>
         <br></br>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={4000} distance="30px">
           <p className="hero-cta">
+          <a href="https://www.linkedin.com/in/baykevin/">
             <span className="cta-btn cta-btn--hero">
-              <Link to="about" smooth duration={1000}>
                 straight to resume
-              </Link>
             </span>
+            </a>
+            <a href="https://www.linkedin.com/in/baykevin/">
             <span className="cta-btn cta-btn--hero">
-              <Link to="/consulting" smooth duration={1000}>
                 get in touch
-              </Link>
             </span>
+            </a>
+            
           </p>
         </Fade>
        
