@@ -66,7 +66,7 @@ const Header = () => {
         <br></br>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={4000} distance="30px">
           <p className="hero-cta">
-          <a href="https://www.linkedin.com/in/baykevin/">
+          <a href="https://drive.google.com/file/d/1cqd0mcikAPHtePyFhoLPhLN_PCeJ-4Wp/view?usp=sharing">
             <span className="cta-btn cta-btn--hero">
                 straight to resume
             </span>
