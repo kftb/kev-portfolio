@@ -1,6 +1,6 @@
-require("dotenv").config({
+require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
-})
+});
 
 module.exports = {
   plugins: [
@@ -9,6 +9,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-offline`,
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -19,8 +20,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `pages`,
-        path: `${__dirname}/src/pages/`,
+        name: `src`,
+        path: `${__dirname}/src/`,
       },
     },
     {
@@ -35,6 +36,7 @@ module.exports = {
         icon: 'src/images/favicon.png',
       },
     },
+    'gatsby-transformer-remark',
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {

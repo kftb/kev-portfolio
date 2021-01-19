@@ -1,12 +1,12 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "kevs-portfolio",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "A portfolio page for Kev Bay",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "env-cmd -f .env.development gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
@@ -26,6 +26,7 @@
     "gatsby-plugin-sass": "^2.3.4",
     "gatsby-plugin-sharp": "^2.6.12",
     "gatsby-source-filesystem": "^2.3.12",
+    "gatsby-transformer-remark": "^2.14.0",
     "gatsby-transformer-sharp": "^2.10.1",
     "nanoid": "^3.1.10",
     "node-sass": "^4.14.1",
@@ -41,6 +42,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
+    "env-cmd": "^10.1.0",
     "eslint": "7.2.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-config-prettier": "^6.11.0",

@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
-  const detailTemplate = path.resolve('./src/templates/ProjectDetail.js');
+  const detailTemplate = path.resolve('./src/components/ProjectDetail/ProjectDetail.js');
   const detailpages = await graphql(`
     query {
       allMarkdownRemark {
