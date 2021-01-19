@@ -1,16 +1,28 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+@import '~@fontsource/open-sans/index.css';
+@import '~@fontsource/montserrat/latin.css';
 
 h1 {
   font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h2 {
   font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
 }
 
-p,
+h3 {
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+}
+
 a {
   font-family: 'Montserrat', sans-serif;
+  font-size: $default-font-size;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
   font-size: $default-font-size;
 }
 
@@ -30,7 +42,7 @@ a:hover {
   margin: 0px;
   margin-bottom: 4.5rem;
   font-size: $big-font-size;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
 
   @include respond(phone) {
