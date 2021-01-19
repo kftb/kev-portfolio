@@ -38,12 +38,7 @@ const Header = () => {
         </Fade>
           
           </Fade>
-        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={2000} distance="30px">
-          <p className="hero-subtitle" style={{"color": `$primary-color`}}>
-            <span style={{ "fontWeight": 100 }}>experienced </span> 
-            <span className="text-color-main">consultant.</span> 
-          </p>
-        </Fade>
+
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={2500} distance="30px">
         <p className="hero-subtitle" style={{"color": `$primary-color`}}>
             <span style={{ "fontWeight": 100}}>aspiring </span> 
@@ -54,6 +49,12 @@ const Header = () => {
         <p className="hero-subtitle" style={{"color": `$primary-color`}}>
             <span style={{ "fontWeight": 100 }}>excited </span> 
             <span className="text-color-main">techie.</span> 
+          </p>
+        </Fade>
+        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={2000} distance="30px">
+          <p className="hero-subtitle" style={{"color": `$primary-color`}}>
+            <span style={{ "fontWeight": 100 }}>experienced </span> 
+            <span className="text-color-main">consultant.</span> 
           </p>
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={3500} distance="30px">
