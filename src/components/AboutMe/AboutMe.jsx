@@ -9,7 +9,7 @@ const AboutMe = () => {
   const { contact } = useContext(PortfolioContext);
   const { cta, btn, email } = contact;
   const { about } = useContext(PortfolioContext);
-  const { img, paragraphOne, paragraphTwo, paragraphThree, resume } = about;
+  const { img, paragraphOne, paragraphTwo, paragraphThree, paragraphFour, resume } = about;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -28,17 +28,6 @@ const AboutMe = () => {
     <section id="aboutme">
       <Container>
         <Title title="About Kev" />
-        <Fade bottom duration={1000} delay={800} distance="30px">
-          <div className="contact-wrapper">
-            <p className="contact-wrapper__text">
-              Would you like to work with me? Awesome!
-              Would you like to work with me? Awesome!
-              Would you like to work with me? Awesome!
-              Would you like to work with me? Awesome!
-              Would you like to work with me? Awesome!
-            </p>
-          </div>
-        </Fade>
         <Row className="about-wrapper">
           <Col md={6} sm={12}>
             <Fade bottom duration={1000} delay={600} distance="30px">
@@ -60,6 +49,9 @@ const AboutMe = () => {
                 </p>
                 <p className="about-wrapper__info-text">
                   {paragraphThree || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
+                </p>
+                <p className="about-wrapper__info-text">
+                  {paragraphFour || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
                 </p>
                 {resume && (
                   <span className="d-flex mt-3">
