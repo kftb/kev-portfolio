@@ -9,6 +9,7 @@ import { PortfolioProvider } from '../context/context';
 
 import { heroData, aboutData, projectsData, contactData, footerData } from '../mock/data';
 import Title from './Title/Title';
+import Divider from './Divider/Divider';
 
 function App() {
   const [hero, setHero] = useState({});
@@ -29,9 +30,9 @@ function App() {
     <PortfolioProvider value={{ hero, about, projects, contact, footer }}>
       <Hero />
       <AboutMe />
+      <Divider />
       <Projects category="pm" title="Product Management" />
-      <Projects category="tech" title="Tech & Data" />
-      <Projects category="nerd" title="Nerd & Hobbies" />
+      <Projects category="tech" title="Tech, Data & Design" />
       <Contact />
     </PortfolioProvider>
   );
