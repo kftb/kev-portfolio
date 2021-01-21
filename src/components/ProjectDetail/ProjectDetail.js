@@ -1,6 +1,11 @@
 import React from 'react';
 import { graphql, Link, useStaticQuery } from 'gatsby';
 import Chip from '@material-ui/core/Chip';
+import Contact from '../Contact/Contact';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFigma, faGithub } from '@fortawesome/free-brands-svg-icons';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../style/main.scss';
 
@@ -14,6 +19,7 @@ export const data = graphql`
         slug
         projectcategory
         summary
+        url
         toptags {
           name
           bg
@@ -63,11 +69,22 @@ const ProjectDetail = (props) => {
               />
             ))}
           </div>
-          <h2 className="projectdetail-sum-title">tl;dr</h2>
+          <div className="projectdetail-sum-tldr">tl;dr</div>
 
           <div className="projectdetail-sum-text">
             {props.data.markdownRemark.frontmatter.summary}
           </div>
+          {/* <div className="btn-seemore-container">
+            <a href="abc" className="btn-seemore">
+              <FontAwesomeIcon icon={faFigma}></FontAwesomeIcon> See on Figma
+            </a>
+            <a href="abc" className="btn-seemore">
+              <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon> See on Github
+            </a>
+            <a href="abc" className="btn-seemore">
+              See live
+            </a>
+          </div> */}
         </div>
       </div>
       <div>
@@ -81,6 +98,13 @@ const ProjectDetail = (props) => {
           ></div>
         </div>
       </div>
+
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <Contact />
     </div>
   );
 };
