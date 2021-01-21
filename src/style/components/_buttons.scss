@@ -3,7 +3,8 @@
   display: inline-block;
   position: relative;
   padding: 0.8rem $default-font-size;
-  margin: 1rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
   font-weight: bold;
   line-height: 1;
   z-index: 1;
@@ -62,6 +63,49 @@
   }
 }
 
+.cta-btn--hero-small {
+  background-image: linear-gradient(135deg, $secondary-color 0%, $secondary-color 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(135deg, $secondary-color 0%, $secondary-color 100%);
+  border-image-slice: 1;
+  cursor: pointer;
+  font-size: 1.3rem;
+  color: $secondary-color;
+
+  // Responsive Button hero style
+  @include respond(phone) {
+    background-image: none;
+    border: 1px solid $secondary-color;
+    -webkit-text-fill-color: $secondary-color;
+  }
+
+  &::after {
+    background-image: linear-gradient(135deg, $secondary-color 0%, $secondary-color 100%);
+
+    // Responsive Button hero style
+    @include respond(phone) {
+      background-image: none;
+    }
+  }
+
+  &:hover {
+    -webkit-text-fill-color: $white-color;
+    color: $white-color;
+    text-decoration: none;
+    // Responsive Button hover hero style
+    @include respond(phone) {
+      -webkit-text-fill-color: $secondary-color;
+    }
+
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
 /* Resume Style */
 .cta-btn--resume {
   color: $white-color;
@@ -77,6 +121,37 @@
 
     &::after {
       width: 100%;
+    }
+  }
+}
+
+.cta-btn--resume-obfuscate {
+  color: $white-color;
+
+  &::after {
+    background: $white-color;
+  }
+
+  &:hover {
+    color: $secondary-color;
+    text-decoration: none;
+
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+.cta-btn--icons {
+  margin-right: 1rem;
+
+  &:hover {
+    -webkit-text-fill-color: $white-color;
+    text-decoration: none;
+
+    // Responsive Button hover hero style
+    @include respond(phone) {
+      -webkit-text-fill-color: $white-color;
     }
   }
 }
