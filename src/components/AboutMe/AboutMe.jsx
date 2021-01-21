@@ -9,7 +9,7 @@ const AboutMe = () => {
   const { contact } = useContext(PortfolioContext);
   const { cta, btn, email } = contact;
   const { about } = useContext(PortfolioContext);
-  const { img, paragraphOne, paragraphTwo, paragraphThree, paragraphFour, resume } = about;
+  const { img, resume } = about;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -40,18 +40,36 @@ const AboutMe = () => {
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
               <div className="about-wrapper__info">
                 <p className="about-wrapper__info-text">
-                  {paragraphOne ||
-                    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
+                  Born and raised in Germany,{' '}
+                  <span className="about-bold">Kevin has always enjoyed building things.</span>{' '}
+                  Programming an event management tool in Microsoft Access and designing student
+                  newspapers in Adobe InDesign have been his first forays into the world of Tech &
+                  Design. ',
                 </p>
                 <p className="about-wrapper__info-text">
-                  {paragraphTwo ||
-                    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
+                  Structured thinking and problem-solving was one of the core skills he learnt as
+                  Associate and{' '}
+                  <span className="about-bold">Consultant at the Boston Consulting Group. </span>
+                  Next to intense client work and lots of PowerPointing and Exceleering, he
+                  continued his programming journey through his own 1-person venture, dedicated to
+                  building a management tool for Summer Camps. ',
                 </p>
                 <p className="about-wrapper__info-text">
-                  {paragraphThree || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
+                  <span className="about-bold">
+                    During his MBA at Kellogg, Kevin is bringing all of these skills together
+                  </span>
+                  , by honing his leadership skills as project lead within the Dean's Consulting
+                  Alliance, his product management passion by building a new class and bidding tool
+                  for his fellow classmates and his passion for data by taking all R classes he can
+                  find.
                 </p>
                 <p className="about-wrapper__info-text">
-                  {paragraphFour || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
+                  Going forward, Kevin seeks{' '}
+                  <span className="about-bold">
+                    new opportunities in the world between Tech, Digital Strategy and Product
+                    Management,{' '}
+                  </span>
+                  where he can make use of his wide tool and skillset.',
                 </p>
                 {resume && (
                   <span className="d-flex mt-3">
@@ -65,6 +83,8 @@ const AboutMe = () => {
                     </a>
                   </span>
                 )}
+                <br />
+                <br />
               </div>
             </Fade>
           </Col>
