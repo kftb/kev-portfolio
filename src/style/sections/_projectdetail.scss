@@ -87,15 +87,17 @@
     font-family: $default-font;
     font-size: 15px;
   }
+
   .projectdetail-text h2 {
-    font-weight: 500;
+    font-weight: 700;
+    text-transform: uppercase;
     font-family: $title-font, sans-serif;
     margin-top: 3rem;
     margin-bottom: 2rem;
   }
 
   .projectdetail-text h3 {
-    font-weight: 400;
+    font-weight: 700;
     font-family: $title-font, sans-serif;
     margin-bottom: 2rem;
   }
@@ -151,5 +153,13 @@
     display: flex;
     align-items: left;
     padding-top: 5rem;
+  }
+
+  .projectdetail-sum-tldr {
+    font-size: $mid-font-size;
+    text-align: left;
+    color: $white-color;
+    text-transform: uppercase;
+    margin-top: 5rem;
   }
 }
