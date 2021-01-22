@@ -62,19 +62,23 @@ const Header = () => {
         </Fade>
         <br></br>
         <br></br>
-        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={4000} distance="30px">
-          <p className="hero-cta">
+        <p className="hero-cta">
+          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={4000} distance="30px">
             <a href="https://drive.google.com/file/d/1cqd0mcikAPHtePyFhoLPhLN_PCeJ-4Wp/view?usp=sharing">
               <span className="cta-btn cta-btn--hero">straight to resume</span>
             </a>
+          </Fade>
+          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={4200} distance="30px">
             <a href="https://www.linkedin.com/in/baykevin/">
               <span className="cta-btn cta-btn--hero">get in touch</span>
             </a>
+          </Fade>
+          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={4400} distance="30px">
             <Link to="/#projects">
               <span className="cta-btn cta-btn--hero">see portfolio</span>
             </Link>
-          </p>
-        </Fade>
+          </Fade>
+        </p>
       </Container>
     </section>
   );
