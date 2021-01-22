@@ -9,8 +9,8 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import Obfuscate from 'react-obfuscate';
 
 const Contact = () => {
-  const { contact } = useContext(PortfolioContext);
-  const { cta, btn, email } = contact;
+  // const { contact } = useContext(PortfolioContext);
+  // const { cta, btn, email } = contact;
 
   return (
     <section id="contact">
