@@ -1,6 +1,6 @@
-require("dotenv").config({
+require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
-})
+});
 
 module.exports = {
   plugins: [
@@ -35,11 +35,14 @@ module.exports = {
         icon: 'src/images/favicon.png',
       },
     },
+
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        // The property ID; the tracking code won't be generated without it
-        trackingId: process.env.GA_TRACKING_ID,
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          process.env.GA_TRACKING_ID, // Google Analytics / GA
+        ],
       },
     },
   ],
