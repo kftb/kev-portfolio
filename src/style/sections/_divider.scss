@@ -8,12 +8,13 @@
 
 .divider-text {
   margin: 0px;
+  margin-bottom: -5rem;
   font-size: $very-big-font-size;
   font-weight: 700;
   font-family: $title-font;
   text-transform: uppercase;
   text-align: left;
-
+  color: $secondary-color;
   @include respond(phone) {
     font-size: 2.8rem;
   }
