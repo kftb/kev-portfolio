@@ -1,10 +1,8 @@
 import React, { useContext } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container } from 'react-bootstrap';
-import PortfolioContext from '../../context/context';
-import Title from '../Title/Title';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import Obfuscate from 'react-obfuscate';
 
@@ -15,12 +13,12 @@ const Contact = () => {
   return (
     <section id="contact">
       <Container>
-        <Fade bottom duration={1000} delay={300} distance="0px">
+        <Fade bottom duration={600} delay={200} distance="0px">
           <h2 className="section-title" style={{ 'text-align': 'center' }}>
             Contact
           </h2>
         </Fade>
-        <Fade bottom duration={1000} delay={800} distance="30px">
+        <Fade bottom duration={600} delay={400} distance="30px">
           <div className="contact-wrapper">
             <p className="contact-wrapper__text">I would love to hear from you!</p>
             <a
