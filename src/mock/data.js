@@ -94,7 +94,7 @@ export const projectsData = [
     url: 'https://logoalbstadt.netlify.app',
     repo: 'https://github.com/kftb/logo-albstadt', // if no repo, the button will not show up
     figma:
-      'https://www.figma.com/proto/igYBO1ccqZnScUg6qMNZBo/Logo-Albstadt?node-id=1%3A2&scaling=min-zoom',
+      'https://www.figma.com/proto/igYBO1ccqZnScUg6qMNZBo/Logo-Albstadt?node-id=80%3A180&viewport=-57%2C116%2C0.22711579501628876&scaling=min-zoom',
   },
   // {
   //   id: nanoid(),
