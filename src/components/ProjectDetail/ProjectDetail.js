@@ -38,43 +38,46 @@ const ProjectDetail = (props) => {
   return (
     <div id="projectdetail">
       <div className="projectdetail-sum">
-        <div className="container">
-          <div className="projectdetail-link-container">
-            <Link className="projectdetail-link" to="/">
-              Return to main page
-            </Link>
-          </div>
-          <h1 className="projectdetail-sum-title">{props.data.markdownRemark.frontmatter.title}</h1>
-          <h2 className="projectdetail-sum-subtitle">
-            {props.data.markdownRemark.frontmatter.subtitle}
-          </h2>
-          <div>{props.data.markdownRemark.frontmatter.projectcategory}</div>
-          <div className="projectdetail-tags-container">
-            {props.data.markdownRemark.frontmatter.toptags.map((tag) => (
-              <Chip
-                label={tag.name}
-                style={{ background: tag.bg }}
-                size="small"
-                className="projectdetail-tags"
-              />
-            ))}
-          </div>
-          <div className="projectdetail-tags-container">
-            {props.data.markdownRemark.frontmatter.bottomtags.map((tag) => (
-              <Chip
-                label={tag.name}
-                style={{ background: tag.bg }}
-                size="small"
-                className="projectdetail-tags"
-              />
-            ))}
-          </div>
-          <div className="projectdetail-sum-tldr">tl;dr</div>
+        <div className="projectdetail-wrapper">
+          <div className="container">
+            <div className="projectdetail-link-container">
+              <Link className="projectdetail-link" to="/">
+                Return to main page
+              </Link>
+            </div>
+            <h1 className="projectdetail-sum-title">
+              {props.data.markdownRemark.frontmatter.title}
+            </h1>
+            <h2 className="projectdetail-sum-subtitle">
+              {props.data.markdownRemark.frontmatter.subtitle}
+            </h2>
+            <div>{props.data.markdownRemark.frontmatter.projectcategory}</div>
+            <div className="projectdetail-tags-container">
+              {props.data.markdownRemark.frontmatter.toptags.map((tag) => (
+                <Chip
+                  label={tag.name}
+                  style={{ background: tag.bg }}
+                  size="small"
+                  className="projectdetail-tags"
+                />
+              ))}
+            </div>
+            <div className="projectdetail-tags-container">
+              {props.data.markdownRemark.frontmatter.bottomtags.map((tag) => (
+                <Chip
+                  label={tag.name}
+                  style={{ background: tag.bg }}
+                  size="small"
+                  className="projectdetail-tags"
+                />
+              ))}
+            </div>
+            <div className="projectdetail-sum-tldr">tl;dr</div>
 
-          <div className="projectdetail-sum-text">
-            {props.data.markdownRemark.frontmatter.summary}
-          </div>
-          {/* <div className="btn-seemore-container">
+            <div className="projectdetail-sum-text">
+              {props.data.markdownRemark.frontmatter.summary}
+            </div>
+            {/* <div className="btn-seemore-container">
             <a href="abc" className="btn-seemore">
               <FontAwesomeIcon icon={faFigma}></FontAwesomeIcon> See on Figma
             </a>
@@ -85,9 +88,10 @@ const ProjectDetail = (props) => {
               See live
             </a>
           </div> */}
+          </div>
         </div>
       </div>
-      <div>
+      <div className="projectdetail-wrapper">
         <div className="container">
           <div
             className="projectdetail-text
