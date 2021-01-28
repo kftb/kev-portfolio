@@ -88,9 +88,9 @@ export const projectsData = [
     info2:
       'The website was planned in Figma and programmed from scratch with Gatsby/React to provide a better learning experience. The page is hosted on Netlify as the page itself will only change rarely.',
     slug: 'tech/logoalbstadt',
-    tag1: 'React',
-    tag2: 'Programming',
-    tag3: 'Consulting',
+    tag1: 'Design',
+    tag2: 'Wireframes',
+    tag3: 'React/Gatsby',
     url: 'https://logoalbstadt.netlify.app',
     repo: 'https://github.com/kftb/logo-albstadt', // if no repo, the button will not show up
     figma:

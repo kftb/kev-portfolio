@@ -44,7 +44,7 @@ const AboutMe = () => {
                   <span className="about-bold">Kevin has always enjoyed building things.</span>{' '}
                   Programming an event management tool in Microsoft Access and designing student
                   newspapers in Adobe InDesign have been his first forays into the world of Tech &
-                  Design. ',
+                  Design.
                 </p>
                 <p className="about-wrapper__info-text">
                   Structured thinking and problem-solving was one of the core skills he learnt as
@@ -52,7 +52,7 @@ const AboutMe = () => {
                   <span className="about-bold">Consultant at the Boston Consulting Group. </span>
                   Next to intense client work and lots of PowerPointing and Exceleering, he
                   continued his programming journey through his own 1-person venture, dedicated to
-                  building a management tool for Summer Camps. ',
+                  building a management tool for Summer Camps.
                 </p>
                 <p className="about-wrapper__info-text">
                   <span className="about-bold">
@@ -69,7 +69,7 @@ const AboutMe = () => {
                     new opportunities in the world between Tech, Digital Strategy and Product
                     Management,{' '}
                   </span>
-                  where he can make use of his wide tool and skillset.',
+                  where he can make use of his wide tool and skillset.
                 </p>
                 {resume && (
                   <span className="d-flex mt-3">
