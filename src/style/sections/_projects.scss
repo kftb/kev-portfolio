@@ -1,8 +1,8 @@
 #projects {
   background-color: $white-color;
   color: $dark-blue-text;
-  margin-top: -15rem;
-  padding-top: 15rem;
+  margin-top: 0rem;
+  padding-top: 3rem;
 
   @include respond(tab-land) {
     margin-top: 0;
@@ -10,7 +10,7 @@
   }
 
   .project-wrapper {
-    margin-bottom: 15rem;
+    margin-bottom: 2rem;
 
     @include respond(phone) {
       margin-bottom: 0rem;
@@ -73,5 +73,11 @@
         }
       }
     }
+  }
+  .project-tag {
+    background-color: $primary-color;
+    font-size: 1rem;
+    margin-right: 0.4rem;
+    margin-bottom: 1rem;
   }
 }

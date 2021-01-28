@@ -1,16 +1,22 @@
 import React, { useContext, useEffect, useState } from 'react';
+import Chip from '@material-ui/core/Chip';
 import Fade from 'react-reveal/Fade';
 import Tilt from 'react-tilt';
 import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 import ProjectImg from '../Image/ProjectImg';
+import { Link } from 'gatsby';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFigma, faGithub } from '@fortawesome/free-brands-svg-icons';
 
-const Projects = () => {
+const Projects = (props) => {
   const { projects } = useContext(PortfolioContext);
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+
+  let cat = props.category;
 
   useEffect(() => {
     if (window.innerWidth > 769) {
@@ -26,29 +32,44 @@ const Projects = () => {
     <section id="projects">
       <Container>
         <div className="project-wrapper">
-          <Title title="Projects" />
-          {projects.map((project) => {
-            const { title, info, info2, url, repo, img, id } = project;
+          <Title title={props.title} />
+          {projects
+            .filter((project) => project.cat == cat)
+            .map((project) => {
+              const {
+                title,
+                info,
+                info2,
+                url,
+                repo,
+                img,
+                id,
+                slug,
+                tag1,
+                tag2,
+                tag3,
+                figma,
+              } = project;
 
-            return (
-              <Row key={id}>
-                <Col lg={4} sm={12}>
-                  <Fade
-                    left={isDesktop}
-                    bottom={isMobile}
-                    duration={1000}
-                    delay={500}
-                    distance="30px"
-                  >
+              return (
+                <Row key={id}>
+                  <Col lg={4} sm={12}>
                     <div className="project-wrapper__text">
                       <h3 className="project-wrapper__text-title">{title || 'Project Title'}</h3>
                       <div>
-                        <p>
-                          {info ||
-                            'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
-                        </p>
+                        <Chip label={tag1} size="small" className="project-tag" />
+                        <Chip label={tag2} size="small" className="project-tag" />
+                        <Chip label={tag3} size="small" className="project-tag" />
+                      </div>
+                      <div>
+                        <p>{info || ''}</p>
                         <p className="mb-4">{info2 || ''}</p>
                       </div>
+
+                      <Link to={slug} className="cta-btn cta-btn--hero">
+                        <span className="cta-btn--icons"></span>
+                        Read More
+                      </Link>
                       <a
                         target="_blank"
                         rel="noopener noreferrer"
@@ -57,28 +78,37 @@ const Projects = () => {
                       >
                         See Live
                       </a>
-
-                      {repo && (
-                        <a
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="cta-btn text-color-main"
-                          href={repo}
-                        >
-                          Source Code
-                        </a>
-                      )}
+                      <div>
+                        {figma && (
+                          <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="cta-btn cta-btn--hero-small"
+                            href={figma || '#!'}
+                          >
+                            <span className="cta-btn--icons">
+                              <FontAwesomeIcon icon={faFigma} />
+                            </span>
+                            See on Figma
+                          </a>
+                        )}
+                        {repo && (
+                          <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="cta-btn cta-btn--hero-small"
+                            href={repo || '#!'}
+                          >
+                            <span className="cta-btn--icons">
+                              <FontAwesomeIcon icon={faGithub} />
+                            </span>
+                            See on Github
+                          </a>
+                        )}
+                      </div>
                     </div>
-                  </Fade>
-                </Col>
-                <Col lg={8} sm={12}>
-                  <Fade
-                    right={isDesktop}
-                    bottom={isMobile}
-                    duration={1000}
-                    delay={1000}
-                    distance="30px"
-                  >
+                  </Col>
+                  <Col lg={8} sm={12}>
                     <div className="project-wrapper__image">
                       <a
                         href={url || '#!'}
@@ -86,30 +116,13 @@ const Projects = () => {
                         aria-label="Project Link"
                         rel="noopener noreferrer"
                       >
-                        <Tilt
-                          options={{
-                            reverse: false,
-                            max: 8,
-                            perspective: 1000,
-                            scale: 1,
-                            speed: 300,
-                            transition: true,
-                            axis: null,
-                            reset: true,
-                            easing: 'cubic-bezier(.03,.98,.52,.99)',
-                          }}
-                        >
-                          <div data-tilt className="thumbnail rounded">
-                            <ProjectImg alt={title} filename={img} />
-                          </div>
-                        </Tilt>
+                        <ProjectImg alt={title} filename={img} />
                       </a>
                     </div>
-                  </Fade>
-                </Col>
-              </Row>
-            );
-          })}
+                  </Col>
+                </Row>
+              );
+            })}
         </div>
       </Container>
     </section>

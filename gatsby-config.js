@@ -9,6 +9,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-offline`,
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -19,8 +20,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `pages`,
-        path: `${__dirname}/src/pages/`,
+        name: `src`,
+        path: `${__dirname}/src/`,
       },
     },
     {
@@ -39,6 +40,24 @@ module.exports = {
       resolve: 'gatsby-plugin-gtag',
       options: {
         trackingId: process.env.GA_TRACKING_ID,
+      },
+    },
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          'gatsby-remark-relative-images',
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              linkImagesToOriginal: false,
+              backgroundColor: 'transparent',
+              quality: 90,
+              withWebp: true,
+              wrapperStyle: 'margin-top: 5rem; margin-bottom: 5rem',
+            },
+          },
+        ],
       },
     },
   ],

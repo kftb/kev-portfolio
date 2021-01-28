@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import Hero from './Hero/Hero';
-import About from './About/About';
 import Projects from './Projects/Projects';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
+import AboutMe from './AboutMe/AboutMe';
 
 import { PortfolioProvider } from '../context/context';
 
 import { heroData, aboutData, projectsData, contactData, footerData } from '../mock/data';
+import Title from './Title/Title';
+import Divider from './Divider/Divider';
 
 function App() {
   const [hero, setHero] = useState({});
@@ -27,7 +29,11 @@ function App() {
   return (
     <PortfolioProvider value={{ hero, about, projects, contact, footer }}>
       <Hero />
-
+      <AboutMe />
+      <Divider />
+      {/* <Projects category="pm" title="Product Management" /> */}
+      <Projects category="tech" title="Tech, Data & Design" />
+      <Contact />
     </PortfolioProvider>
   );
 }
