@@ -41,7 +41,7 @@ const ProjectDetail = (props) => {
         <div className="projectdetail-wrapper">
           <div className="container">
             <div className="projectdetail-link-container">
-              <Link className="projectdetail-link" to="/">
+              <Link className="projectdetail-link" to="/#projects">
                 Return to main page
               </Link>
             </div>
