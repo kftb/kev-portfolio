@@ -31,7 +31,7 @@ function App() {
       <Hero />
       <AboutMe />
       <Divider />
-      <Projects category="pm" title="Product Management" />
+      {/* <Projects category="pm" title="Product Management" /> */}
       <Projects category="tech" title="Tech, Data & Design" />
       <Contact />
     </PortfolioProvider>
