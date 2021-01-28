@@ -84,7 +84,7 @@ const Projects = (props) => {
                             target="_blank"
                             rel="noopener noreferrer"
                             className="cta-btn cta-btn--hero-small"
-                            href={url || '#!'}
+                            href={figma || '#!'}
                           >
                             <span className="cta-btn--icons">
                               <FontAwesomeIcon icon={faFigma} />
@@ -97,7 +97,7 @@ const Projects = (props) => {
                             target="_blank"
                             rel="noopener noreferrer"
                             className="cta-btn cta-btn--hero-small"
-                            href={url || '#!'}
+                            href={repo || '#!'}
                           >
                             <span className="cta-btn--icons">
                               <FontAwesomeIcon icon={faGithub} />
