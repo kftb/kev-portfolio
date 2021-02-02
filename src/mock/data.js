@@ -96,6 +96,22 @@ export const projectsData = [
     figma:
       'https://www.figma.com/proto/igYBO1ccqZnScUg6qMNZBo/Logo-Albstadt?node-id=80%3A180&viewport=-57%2C116%2C0.22711579501628876&scaling=min-zoom',
   },
+  {
+    id: nanoid(),
+    cat: 'tech',
+    img: 'webquest_logo.png',
+    title: 'WebQuest: A silly game to deliver gifts with riddles',
+    info: 'A first foray into JavaScript two years ago brought me to develop this mini game.',
+    info2:
+      'WebQuest is the result of my experimentation with PhaserJS, and an attempt of building a mini-game in which players are asked to solve five riddles, all embedded in a cute 8bit graphics style. ',
+    slug: 'tech/webquest',
+    tag1: 'Game Design',
+    tag2: 'Javascript',
+    tag3: 'Full development',
+    url: 'https://kftb.github.io/webquest/',
+    repo: 'https://github.com/kftb/webquest/', // if no repo, the button will not show up
+    figma: '',
+  },
   // {
   //   id: nanoid(),
   //   cat: 'tech',
