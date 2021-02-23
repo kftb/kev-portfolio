@@ -20,6 +20,8 @@ export const data = graphql`
         projectcategory
         summary
         url
+        figma
+        repo
         toptags {
           name
           bg
@@ -72,22 +74,37 @@ const ProjectDetail = (props) => {
                 />
               ))}
             </div>
-            <div className="projectdetail-sum-tldr">tl;dr</div>
+            <div>
+              <div className="projectdetail-sum-tldr">tl;dr</div>
 
-            <div className="projectdetail-sum-text">
-              {props.data.markdownRemark.frontmatter.summary}
+              <div className="projectdetail-sum-text">
+                {props.data.markdownRemark.frontmatter.summary}
+              </div>
             </div>
-            {/* <div className="btn-seemore-container">
-            <a href="abc" className="btn-seemore">
-              <FontAwesomeIcon icon={faFigma}></FontAwesomeIcon> See on Figma
-            </a>
-            <a href="abc" className="btn-seemore">
-              <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon> See on Github
-            </a>
-            <a href="abc" className="btn-seemore">
-              See live
-            </a>
-          </div> */}
+
+            <div className="projectdetail-button-container">
+              {props.data.markdownRemark.frontmatter.figma && (
+                <div className="projectdetail-button-link">
+                  <a href={props.data.markdownRemark.frontmatter.figma}>
+                    <FontAwesomeIcon icon={faFigma}></FontAwesomeIcon> See on Figma
+                  </a>
+                </div>
+              )}
+              {props.data.markdownRemark.frontmatter.repo && (
+                <div className="projectdetail-button-link">
+                  <a href={props.data.markdownRemark.frontmatter.repo}>
+                    <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon> See on Github
+                  </a>
+                </div>
+              )}
+              {props.data.markdownRemark.frontmatter.url && (
+                <div className="projectdetail-button-link">
+                  <a href={props.data.markdownRemark.frontmatter.url}>See live</a>
+                </div>
+              )}
+            </div>
+            <br></br>
+            <br></br>
           </div>
         </div>
       </div>
