@@ -42,24 +42,24 @@ export const projectsData = [
   //   repo: '', // if no repo, the button will not show up
   //   figma: '',
   // },
-  // {
-  //   id: nanoid(),
-  //   cat: 'pm',
-  //   img: 'kelloggmycourses.png',
-  //   title: 'Kellogg MyCourses: A class selection and planning tool',
-  //   info:
-  //     'This project was focused to build a SEO-optimized, mobile-friendly webpage for a speech therapy office in Albstadt, Germany.',
-  //   info2:
-  //     'The website was planned in Figma and programmed from scratch with Gatsby/React to provide a better learning experience. The page is hosted on Netlify as the page itself will only change rarely.',
+  {
+    id: nanoid(),
+    cat: 'pm',
+    img: 'kmc_header.png',
+    title: 'Kellogg MyCourses: A better way to plan classes',
+    info:
+      'Picking classes during an MBA is a stressful exercise as historic data meets a plethora of options. Kellogg MyCourses was designed to provide an aggregated data view that makes class comparison easy.',
+    info2: 'The website was planned in Figma, built in React with data wrangled in R',
 
-  //   url: '',
-  //   tag1: 'Academic',
-  //   tag2: 'Full PM journey',
-  //   tag3: 'React',
-  //   slug: 'pm/kelloggmycourses',
-  //   repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
-  //   figma: '',
-  // },
+    url: 'https://kftb.github.io/k_mycourses',
+    tag1: 'Academic',
+    tag2: 'Full PM journey',
+    tag3: 'React',
+    slug: 'pm/kmycourses',
+    repo: '', // if no repo, the button will not show up
+    figma:
+      'https://www.figma.com/proto/VJFw4lqtoYAmpMTNvV3L14/Kellogg-My-Courses?node-id=206%3A39&viewport=394%2C343%2C0.3430800139904022&scaling=min-zoom',
+  },
   // {
   //   id: nanoid(),
   //   cat: 'pm',
