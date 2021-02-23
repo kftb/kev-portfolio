@@ -14,9 +14,9 @@ info: ''
 info2: ''
 
 link: ''
-url: 'https://logoalbstadt.netlify.app'
-repo: ''
-figma: ''
+url: 'https://logoalbstadt.de'
+repo: 'https://github.com/kftb/logo-albstadt'
+figma: 'https://www.figma.com/proto/igYBO1ccqZnScUg6qMNZBo/Logo-Albstadt?node-id=80%3A180&viewport=-57%2C116%2C0.22711579501628876&scaling=min-zoom'
 
 tag1: ''
 tag2: ''
