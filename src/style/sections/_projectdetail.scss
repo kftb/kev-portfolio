@@ -26,11 +26,12 @@
   ol {
     font-family: $default-font;
     font-size: $default-font-size;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
   li {
     font-family: $default-font;
-    font-size: 15px;
-    margin-bottom: 2rem;
+    font-size: $default-font-size;
   }
 
   img > p {
@@ -42,14 +43,15 @@
     font-weight: 700;
     text-transform: uppercase;
     font-family: $title-font, sans-serif;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
+    margin-top: 7rem;
+    margin-bottom: 1rem;
   }
 
   .projectdetail-text h3 {
     font-weight: 700;
     font-family: $title-font, sans-serif;
     margin-bottom: 2rem;
+    margin-top: 4rem;
   }
 
   .projectdetail-sum {
@@ -111,5 +113,27 @@
     color: $white-color;
     text-transform: uppercase;
     margin-top: 5rem;
+  }
+
+  .projectdetail-button-container {
+    display: flex;
+  }
+
+  .projectdetail-button-link {
+    color: $white-color;
+    border-width: 2px;
+    border-style: solid;
+    border-color: $white-color;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+
+    &:hover {
+      background-color: $primary-color;
+      text-decoration: none;
+    }
+    & a {
+      color: $white-color;
+    }
   }
 }
