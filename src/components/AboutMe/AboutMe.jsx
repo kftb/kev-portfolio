@@ -56,7 +56,7 @@ const AboutMe = () => {
                 </p>
                 <p className="about-wrapper__info-text">
                   <span className="about-bold">
-                    During his MBA at Kellogg, Kevin is bringing all of these skills together
+                    During his MBA at Kellogg, Kevin brought all of these skills together
                   </span>
                   , by honing his leadership skills as project lead within the Dean's Consulting
                   Alliance, his product management passion by building a new class and bidding tool
@@ -64,10 +64,10 @@ const AboutMe = () => {
                   find.
                 </p>
                 <p className="about-wrapper__info-text">
-                  Going forward, Kevin seeks{' '}
+                  Kevin continues to seek{' '}
                   <span className="about-bold">
-                    new opportunities in the world between Tech, Digital Strategy and Product
-                    Management,{' '}
+                    new opportunities in the world between Tech, Digital Strategy, Consulting and
+                    Product Management - both professionaly and as hobbyist -{' '}
                   </span>
                   where he can make use of his wide tool and skillset.
                 </p>

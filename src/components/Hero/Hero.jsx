@@ -36,12 +36,6 @@ const Header = () => {
           </Fade>
         </Fade>
 
-        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={2000} distance="30px">
-          <p className="hero-subtitle" style={{ color: `$primary-color` }}>
-            <span style={{ fontWeight: 100 }}>aspiring </span>
-            <span className="text-color-main">product manager.</span>
-          </p>
-        </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={2500} distance="30px">
           <p className="hero-subtitle" style={{ color: `$primary-color` }}>
             <span style={{ fontWeight: 100 }}>excited </span>
@@ -64,7 +58,7 @@ const Header = () => {
         <br></br>
         <p className="hero-cta">
           <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={4000} distance="30px">
-            <a href="https://drive.google.com/file/d/1cqd0mcikAPHtePyFhoLPhLN_PCeJ-4Wp/view?usp=sharing">
+            <a href="https://bit.ly/kevbayresume">
               <span className="cta-btn cta-btn--hero">straight to resume</span>
             </a>
           </Fade>
