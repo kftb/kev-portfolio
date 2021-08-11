@@ -58,7 +58,7 @@ const Header = () => {
         <br></br>
         <p className="hero-cta">
           <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={4000} distance="30px">
-            <a href="https://bit.ly/kevbayresume">
+            <a href="https://drive.google.com/file/d/1gIeFgMmEYXcpSiPgwABUbjfVPsR02PrT/view?usp=sharing">
               <span className="cta-btn cta-btn--hero">straight to resume</span>
             </a>
           </Fade>
